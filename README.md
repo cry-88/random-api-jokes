@@ -35,6 +35,7 @@ Python · Flask 3 · pytest · 原生 HTML + JS
 
 ## 说明
 
-- 数据存放在内存列表中，服务器重启后丢失（未接数据库）
+- 数据持久化在 `jokes.json`：首次运行由代码中的种子数据生成，之后所有投稿都写入该文件，**服务器重启不丢失**
+- `jokes.json` 是运行时数据，不纳入 git（已在 .gitignore）
 - 自带 debug 模式（改代码保存后自动重启），是开发服务器，请勿直接用于生产
 - 联系方式：（占位）your-email@example.com
